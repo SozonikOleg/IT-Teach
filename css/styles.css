@@ -1,0 +1,262 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* Header */
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    padding-right: 320px;
+    left: 0;
+    right: 0;
+    top: 0;
+    box-sizing: border-box;
+    z-index: 200;
+}
+
+.header__logo {
+    margin: 50px 0px 0px 76px;
+}
+
+.header__search {
+    margin: 50px 18px 0px 0px;
+}
+
+.header__search i{
+    color: #b4b4b4;
+    font-size: 26px;
+}
+
+/* nav >language, nav_menu, nav__product, menu_more, footer_nav */
+
+.nav {
+    width:320px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #fff;
+    padding: 50px 45px;
+    box-sizing: border-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between; 
+    flex-direction: column;
+    z-index: 1000;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    display: block;     
+}
+
+.nav ul{
+    list-style: none;
+}   
+
+/* language */
+
+.language {
+    display: flex;
+    position: absolute;
+    top: 25px;
+    right: 50px
+}
+
+/* nav_menu */
+
+.nav__menu  {
+    letter-spacing: 0.13px;
+}  
+
+.nav__menu ul li {
+    margin-bottom: 9px;
+}
+
+
+.nav__menu span {
+    padding-bottom: 2px;
+    color: #6699cc;
+    border-bottom: 1px solid #ebebeb;
+}
+
+/* nav__product */
+
+.nav__product {
+    box-sizing: border-box; 
+    font-size: 24px;
+    font-weight: 800;
+    opacity: 0.95;
+    color: black;
+    letter-spacing: 0.16px;
+}
+
+.nav__product span {
+    padding-bottom: 2px;
+    border-bottom: 1px solid #ebebeb;
+    color: #000;
+    position: relative;
+    left: 0
+}
+
+.nav__product ul li {
+    margin-bottom: 20px;
+}
+
+/* menu_more */
+
+.menu_more ul li a {
+    color: #666666;
+}   
+
+.menu_more {
+    box-sizing: border-box;
+    opacity: 0.85;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.13px;
+}
+
+.menu_more ul li {
+    margin-bottom: 16px;
+}
+
+/* footer_nav >phone, mail, social*/
+
+.footer_nav {
+height: 86px;
+}
+
+/* phone */
+
+.phone {
+    margin-bottom: 7px;
+    color: #353535;
+    font-size: 23px;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    font-weight: 800;
+}
+
+/* mail */
+
+.mail a{
+    color: #3399cc;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+}
+
+/* social */
+
+.social {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 23px;
+    width: 177px;
+}
+
+.social i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    border: 1.5px solid black;
+}
+
+/* main */
+
+.main {
+    min-height: calc(100vh - 20px);
+    display: flex;
+    align-items: center;
+}
+
+.slider__item {
+    display: flex !important;
+    align-items: center;
+
+    height: 100vh;
+    
+    background-image: url(../img/main-bg.jpg);
+}
+
+.slider__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    margin-left: 120px;
+}
+
+.slider__content .sub-title {
+    opacity: 0.85;
+    color: #333333;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: 0.14px;
+}
+
+.slider__content .title {
+    color: #333333;
+    font-size: 55px;
+    font-weight: bold;
+    line-height: 65px;
+    letter-spacing: 0.44px;
+    margin-bottom: 60px;
+}
+
+.slider__content .description {
+    width: 727px;
+    color: #333333;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 24px;
+    letter-spacing: 0.13px;
+    padding-left: 24px;
+    border-left: 5px solid #333333;
+    margin-bottom: 80px;
+}
+
+.slider__content .more {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #ff6633;
+    padding: 15px 36px;
+    border-radius: 4px;
+    box-shadow: 0 5px 30px rgba(148,151,155,.6);
+    transition: all .3s;
+    display: block;
+}
+
+.slider__content .more:hover {
+    box-shadow: 0 7px 25px rgba(148,151,155,.65);
+}
+
+.slider__img img {
+    width: 75%;
+}
+
+.slider-nav {
+    position: absolute;
+
+    bottom: 0;
+    left: 75px;
+}
