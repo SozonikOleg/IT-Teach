@@ -565,7 +565,7 @@ height: 86px;
 
 .main__content-scroll {
     padding-top: 45px;
-    height: calc(100vh - 100px);
+    height: calc(100vh - 110px);
     overflow-y: scroll;
     box-sizing: border-box;
     padding-right: 20px;
