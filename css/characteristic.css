@@ -62,7 +62,7 @@ body{
 
     body .menu__toggle {
         position: relative;
-        padding: 25px 0px 0px 25px;
+        padding-top: 25px;
     }
 
     body .icon__close a i {
@@ -183,6 +183,7 @@ body{
 
     body .nav.active {
         left: 0;
+        width: 75%;
     }
 
     body .icon__close a i {
@@ -207,6 +208,7 @@ body{
     }
 
     body .main__content-scroll {
+        height: calc(100vh - 90px);
         margin: 0px 0px 0px 4px        ;
         padding: 0px;
     }
