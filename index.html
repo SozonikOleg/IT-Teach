@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>БелИНЭКО - единственный в Беларуси производитель монтажных пен и жестких ППУ</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
@@ -18,10 +18,13 @@
 
 <body>
     <header class="header">
+        <div class="menu__toggle">
+            <a href="#"><i class="fas fa-bars"></i></a>
+        </div>
         <div class="header__logo">
             <a href="" class="logo__link">
                 <img src="..\IT Teach tack\img\logo.png" alt="logo">
-            </a>.
+            </a>
         </div>
         <div class="header__search">
             <a href="" class="search__link">
@@ -29,9 +32,15 @@
             </a>
         </div>
     </header>
-
+<!-- .NAV -->
     <nav class="nav">
-        <div class="language"></div>
+        <div class="language">
+            <div class="icon icon__close">
+                <a href="#">
+                        <i class="fas fa-times"></i>
+                </a>
+            </div>   
+        </div>
         <div class="nav__menu">
             <ul>
                 <li>
@@ -130,46 +139,50 @@
             </div>
         </div>
     </nav>
-   
-        <main class="main">
+   <!-- THE END .NAV -->
 
-            <div class="slider__main">
-                <div class="slider__content">
+   <!-- .MAIN -->
+
+        <main class="main">
+            <div class="wrapper__slider">
+                <div class="slider__discription">
                     <span class="sub-title">ПРОДУКТ</span>
                     <h2 class="title">Герметик акриловый "PATRON"</h2>
                     <p class="description">Применяется: внутри и снаружи помещений. Для быстрого и равномерного окрашивания металлических, деревянных,
                         каменных, бетонных, пласмассовых, гипсовых и др. поверхностей, для декоративно-оформительских, ремонтных
                         и реставрационных работ. Не содержит озоноразрушающих веществ. Не содержит свинец или соединения
                         хрома.</p>
-                    <a href="#" class="more">ПОДРОБНЕЕ</a>
+                    <button class="button__form">
+                        <a href="#">ПОДРОБНЕЕ</a>
+                    </button>
                 </div>
-            
                 <div class="slider__img">
                     <img src="./img/slider-item.png" alt="slider-item">
                 </div>
             </div>
         
-            <div class="slider slider-nav">
-                <div class="slider-nav-first">
+            <div class="slider__nav">
+                <div class="slider__nav-item">
                     <h3>01.</h3>
                     <p>Пена бытовая монтажная KANZLER </p>
                 </div>  
-                <div class="slider-nav-second">
+                <div class="slider__nav-item">
                     <h3>02.</h3>
                     <p>Пена монтажная бытовая всесезонная PROFPUR Ultra</p>
                 </div>
-                <div class="slider-nav-third">
+                <div class="slider__nav-item">
                     <h3>03.</h3>
                     <p>Герметик акриловый "PATRON" Новая продукция</p>
                 </div>
             </div>
 
         </main>
+        <!-- THE END .MAIN -->
 
     <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script> -->
-    <!-- <script src="./libs/slick/slick.js"></script> -->
-    <!-- <script src="./js/main.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script> 
+    <script src="./libs/slick/slick.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
