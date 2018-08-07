@@ -36,6 +36,24 @@ body .nav .icon__close a{
     text-decoration: none;
 }
 
+body .menu__toggle a i {
+    text-decoration: none;
+    display: block;
+}
+
+body .menu__toggle a  {
+    text-decoration: none;
+}
+
+body .nav.active {
+    left: 0;
+}
+
+body .nav {
+    left: -320px;
+    transition: all .3s;
+} 
+
 /* .main @media (max-width: 1200px)*/
 
 body .main {
@@ -58,7 +76,25 @@ body .icon__close a i {
     display: block;
 }
 
-body .nav .icon__close a{
+body .nav .icon__close a {
+    text-decoration: none;
+}
+
+body .nav.active {
+    left: 0;
+}
+
+body .nav {
+    left: -320px;
+    transition: all .3s;
+}   
+
+body .menu__toggle a i {
+    text-decoration: none;
+    display: block;
+}
+
+body .menu__toggle a  {
     text-decoration: none;
 }
 
@@ -132,9 +168,26 @@ body .slider__nav-item p {
    padding-top: 2%;
 }
 
+.slider__nav-item h3 {
+   text-align: center;
+}
+
 body .slider__nav-item:nth-child(1),
 body .slider__nav-item:nth-child(2) {
     border-right: none;
+}
+
+body .slider__discription .sub-title {
+    display: block;
+    margin: 0 auto;
+}
+
+body .slider__discription .title {
+    text-align: center;
+}
+
+body .slider__nav p {   
+  text-align: center;
 }
 
 }
@@ -160,6 +213,12 @@ body .slider__nav-item:nth-child(2) {
 .header__search i{
     color: #868383;
     font-size: 26px;
+}
+
+.menu__toggle a i {
+    color: #b4b4b4;
+    font-size: 25px;
+    display: none;
 }
 
 /* nav >language, nav_menu, nav__product, menu_more, footer_nav */
@@ -434,7 +493,6 @@ height: 86px;
     color: #767676;
     font-family: Ubuntu;
     font-size: 15px;
-    font-weight: bold;
     letter-spacing: 0.4px;
 }
 
@@ -443,7 +501,7 @@ height: 86px;
     border-right: 2px solid #767676;
 }
 
-.slider-nav h3 {
+.slider__nav-item h3 {
     color: #767676;
     font-size: 14px;
 }
