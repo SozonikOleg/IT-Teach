@@ -68,7 +68,11 @@ body .main {
 @media (max-width: 1000px) {
 
 /* .header @media (max-width: 1000px) */
-
+body .header__logo img {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+}
 
 /* .nav @media (max-width: 1000px)*/
 
@@ -97,6 +101,8 @@ body .menu__toggle a i {
 body .menu__toggle a  {
     text-decoration: none;
 }
+
+
 
 /* .main @media (max-width: 1000px)*/
 }
@@ -212,7 +218,7 @@ body .slider__nav p {
 
 .header__search i{
     color: #868383;
-    font-size: 26px;
+    font-size: 22px;
 }
 
 .menu__toggle a i {
